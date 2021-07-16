@@ -2,13 +2,34 @@
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>529</width>
-    <height>395</height>
+    <width>430</width>
+    <height>440</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>430</width>
+    <height>440</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>430</width>
+    <height>440</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -22,6 +43,55 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>104</width>
+     <height>31</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>104</width>
+     <height>31</height>
+    </size>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;친선경기&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="overwriteMode">
+    <bool>false</bool>
+   </property>
+   <property name="tabStopWidth">
+    <number>0</number>
+   </property>
+   <property name="acceptRichText">
+    <bool>false</bool>
+   </property>
   </widget>
   <widget class="QTextEdit" name="game_numbers">
    <property name="geometry">
@@ -31,6 +101,16 @@
      <width>104</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;22&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="game_year">
@@ -42,6 +122,12 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QTextEdit" name="game_month">
    <property name="geometry">
@@ -51,6 +137,18 @@
      <width>104</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QTextEdit" name="game_day">
@@ -62,6 +160,12 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QTextEdit" name="game_start">
    <property name="geometry">
@@ -71,6 +175,19 @@
      <width>104</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;19&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="game_end">
@@ -82,6 +199,19 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;21&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
   </widget>
   <widget class="QTextEdit" name="game_leader">
    <property name="geometry">
@@ -92,25 +222,47 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;페가수스&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
   </widget>
   <widget class="QTextEdit" name="first_number">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>160</x>
      <y>330</y>
      <width>104</width>
      <height>31</height>
     </rect>
    </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QTextEdit" name="second_number">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>300</x>
      <y>330</y>
      <width>104</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -142,7 +294,7 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>280</x>
      <y>330</y>
      <width>16</width>
      <height>21</height>
@@ -170,12 +322,12 @@
     <rect>
      <x>60</x>
      <y>230</y>
-     <width>56</width>
-     <height>12</height>
+     <width>221</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>사용시간</string>
+    <string>사용시간 (최대 2시간 사용 가능)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
@@ -183,12 +335,12 @@
     <rect>
      <x>60</x>
      <y>160</y>
-     <width>56</width>
-     <height>12</height>
+     <width>291</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>사용일자</string>
+    <string>사용일자 ( 예약일로부터 2주까지 예약 가능)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_7">
@@ -220,7 +372,7 @@
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>410</x>
+     <x>400</x>
      <y>190</y>
      <width>16</width>
      <height>21</height>
@@ -261,12 +413,12 @@
     <rect>
      <x>70</x>
      <y>30</y>
-     <width>56</width>
-     <height>12</height>
+     <width>71</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>행사명</string>
+    <string>부산대학교</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_13">
@@ -279,10 +431,49 @@
     </rect>
    </property>
    <property name="text">
-    <string>친선경기</string>
+    <string>대운동장</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="register_button">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>400</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>입력완료</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>410</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Made by CSE.15th Class.An J S</string>
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>game_year</tabstop>
+  <tabstop>game_month</tabstop>
+  <tabstop>game_day</tabstop>
+  <tabstop>game_start</tabstop>
+  <tabstop>game_end</tabstop>
+  <tabstop>first_number</tabstop>
+  <tabstop>second_number</tabstop>
+  <tabstop>register_button</tabstop>
+  <tabstop>game_numbers</tabstop>
+  <tabstop>game_name</tabstop>
+  <tabstop>game_leader</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
