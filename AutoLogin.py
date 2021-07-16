@@ -31,18 +31,25 @@ driver.find_element_by_xpath('/html/body/table[2]/tbody/tr[1]/td/table/tbody/tr[
 
 #  "사용일자" INPUT
 #  Select statement
-start_month = "7"
-requests = Select(driver.find_element_by_id("Dropdownlistrequests"))
-requests.select_by_value("6")
+Year = "2021"
+Month = "7"
+Day = "30"
+day = Year + "-0" + Month + "-" + Day
 
-start_day = "19"
-driver.find_element_by_xpath("/html/body/form/table/tbody/tr[2]/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/select[3]")
+ddelement= Select(driver.find_element_by_xpath('/html/body/form/table/tbody/tr[2]/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/select[2]'))
+ddelement.select_by_value(Month)
+
+
+ddelement= Select(driver.find_element_by_xpath('/html/body/form/table/tbody/tr[2]/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/select[3]'))
+ddelement.select_by_value(day)
+
 #  "사용시간" INPUT
-##start_time = 11
-##driver.execute_script("document.getElementsByName('s_time')[0].value=\'" + str(start_time) + "\'")
+start_time = 13
+ddelement= Select(driver.find_element_by_xpath('/html/body/form/table/tbody/tr[2]/td/table[2]/tbody/tr/td/table/tbody/tr[6]/td[2]/select[1]'))
+ddelement.select_by_value(str(start_time))
 
-##end_time = 13
-##driver.execute_script("document.getElementsByName('e_time')[0].value=\'" + str(end_time) + "\'")
+ddelement= Select(driver.find_element_by_xpath('/html/body/form/table/tbody/tr[2]/td/table[2]/tbody/tr/td/table/tbody/tr[6]/td[2]/select[2]'))
+ddelement.select_by_index(1)
 
 #  "행사명" INPUT
 Name = "친선경기"
