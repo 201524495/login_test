@@ -1,22 +1,23 @@
 import sys
 
 from PyQt5 import QtWidgets
-from PyQt5 import uic
 from PyQt5.QtWidgets import *
-from PyQt5.uic import loadUi
 
-from modules import AutoLogin
+from selenium import webdriver
+import AutoLogin, UI
 
-UI = '../ui/register_form.ui'
-# global game_name, game_numbers, game_year, game_month, game_leader, \
-#             game_day, game_start, game_end, first_number, second_number
+
+
+# pyinstaller -w -F --add-binary "chromedriver.exe";"." Run.py
+# pyinstaller --onefile --noconsole --add-binary "chromedriver.exe";"." Run.py
 
 
 # main class
-class MainWindow(QDialog):  # , UI.Ui_Form):
+class MainWindow(QDialog, UI.Ui_Form):  # , UI.Ui_Form):
     def __init__(self):
-        super(MainWindow, self).__init__()
-        loadUi(UI, self)
+        # super(MainWindow, self).__init__()
+        QDialog.__init__(self, None)
+        self.setupUi(self)
         self.register_button.clicked.connect(self.run)
 
     def run(self):
@@ -45,7 +46,7 @@ class MainWindow(QDialog):  # , UI.Ui_Form):
 
 if __name__ == "__main__":
     # QApplication : The Class For Running Program
-    app = QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
 
     # Option UI Change
     widget = QtWidgets.QStackedWidget()
