@@ -113,5 +113,6 @@ def autoLogin(game_name, game_numbers, game_leader, game_start,
         # finish stage
         driver.find_element_by_xpath('/html/body/form/table/tbody/tr[2]/td/table[3]/tbody/tr/td/input').click()
 
-    except:
+    except Exception as e:
+        print(e)
         pass
