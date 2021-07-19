@@ -3,10 +3,7 @@ import sys
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import *
 
-from selenium import webdriver
 import AutoLogin, UI
-
-
 
 # pyinstaller -w -F --add-binary "chromedriver.exe";"." Run.py
 # pyinstaller --onefile --noconsole --add-binary "chromedriver.exe";"." Run.py
