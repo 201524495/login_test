@@ -1,4 +1,5 @@
 import sys
+from datetime import datetime, timedelta
 
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import *
@@ -16,6 +17,14 @@ class MainWindow(QDialog, UI.Ui_Form):  # , UI.Ui_Form):
         QDialog.__init__(self, None)
         self.setupUi(self)
         self.register_button.clicked.connect(self.run)
+        now = datetime.now()
+        after_one_week = now + timedelta(weeks=2)
+        print(after_one_week, type(after_one_week))
+        Date = str(after_one_week)
+        print(Date[0:10])
+        self.game_year.setPlainText(Date[0:4])
+        self.game_month.setPlainText(Date[5:7])
+        self.game_day.setPlainText(Date[8:10])
 
     def run(self):
 

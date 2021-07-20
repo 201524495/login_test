@@ -49,9 +49,10 @@ def autoLogin(game_name, game_numbers, game_leader, game_start,
         # Year = "2021"
         Year = game_year
         # Month = "7"
-        Month = game_month
+        Month = str(int(game_month))
+        print(Month)
         # Day = "30"
-        Day = game_day
+        Day = str(int(game_day))
 
         ddelement = Select(driver.find_element_by_xpath(
             '/html/body/form/table/tbody/tr[2]/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/select[2]'))
