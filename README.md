@@ -32,11 +32,13 @@
 
   ![UItoPY](https://github.com/201524495/login_test/blob/main/image/UItoPY.JPG)
   
-    
+    pyuic5 -x ui/register_form.ui -o modules/UI.py
 
 ## make EXE file with Chromedriver
 
   ![makeEXEwithChromedriver.JPG](https://github.com/201524495/login_test/blob/main/image/makeEXEwithChromedriver.JPG)
+  
+    pyinstaller -w -F --add-binary "chromedriver.exe";"." Run.py
   
   don't want to see cmd console ==> using "--noconsole" or "-w"
   
