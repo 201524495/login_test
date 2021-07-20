@@ -556,14 +556,14 @@ p, li { white-space: pre-wrap; }
   </widget>
  </widget>
  <tabstops>
+  <tabstop>game_start</tabstop>
+  <tabstop>game_end</tabstop>
+  <tabstop>register_button</tabstop>
   <tabstop>game_year</tabstop>
   <tabstop>game_month</tabstop>
   <tabstop>game_day</tabstop>
-  <tabstop>game_start</tabstop>
-  <tabstop>game_end</tabstop>
   <tabstop>first_number</tabstop>
   <tabstop>second_number</tabstop>
-  <tabstop>register_button</tabstop>
   <tabstop>game_numbers</tabstop>
   <tabstop>game_name</tabstop>
   <tabstop>game_leader</tabstop>
