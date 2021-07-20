@@ -43,3 +43,8 @@
   don't want to see cmd console ==> using "--noconsole" or "-w"
   
   make only one file ==> "--onefile" or "-F" 
+  
+## Result
+
+ ![result](https://github.com/201524495/login_test/blob/main/image/result.JPG)
+ 
