@@ -8,8 +8,8 @@ import AutoLogin, UI
 
 # find virtual env => lose size of exe files
 # & '..\..\Python Scripts\Scripts\activate'
-# pyinstaller -w -F --add-binary "chromedriver.exe;." Run.py
-# pyinstaller --onefile --noconsole --add-binary "chromedriver.exe";"." Run.py
+# pyinstaller -w -F --uac-admin --add-binary "chromedriver.exe;." Run.py
+# pyinstaller --noconsole --onefile --uac-admin --add-binary "chromedriver.exe";"." Run.py
 
 
 # main class
