@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['Run.py'],
-             pathex=['C:\\Users\\ss\\Documents\\GitHub\\login_test\\modules'],
+             pathex=['C:\\Users\\AnJunSu\\Documents\\GitHub\\login_test\\modules'],
              binaries=[('chromedriver.exe', '.')],
              datas=[],
              hiddenimports=[],

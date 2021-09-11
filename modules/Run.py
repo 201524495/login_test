@@ -6,7 +6,9 @@ from PyQt5.QtWidgets import *
 
 import AutoLogin, UI
 
-# pyinstaller -w -F --add-binary "chromedriver.exe";"." Run.py
+# find virtual env => lose size of exe files
+# & '..\..\Python Scripts\Scripts\activate'
+# pyinstaller -w -F --add-binary "chromedriver.exe;." Run.py
 # pyinstaller --onefile --noconsole --add-binary "chromedriver.exe";"." Run.py
 
 
