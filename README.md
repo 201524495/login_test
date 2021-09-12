@@ -54,3 +54,7 @@
 
  ![result](https://github.com/201524495/login_test/blob/main/image/result.JPG)
  
+ my execution file's reservation time is under 10sec 
+
+![myResult](https://github.com/201524495/login_test/blob/main/image/myResult.PNG)
+![otherResult](https://github.com/201524495/login_test/blob/main/image/otherResult.PNG)
