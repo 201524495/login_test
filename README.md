@@ -44,6 +44,12 @@
   
   make only one file ==> "--onefile" or "-F" 
   
+  <h1>some issue in pyinstaller</h1>
+  
+  original code : pyinstaller -w -F --add-binary "chromedriver.exe";"." Run.py
+  
+  new code : pyinstaller -w -F --add-binary "chromedriver.exe;." Run.py
+  
 ## Result
 
  ![result](https://github.com/201524495/login_test/blob/main/image/result.JPG)
